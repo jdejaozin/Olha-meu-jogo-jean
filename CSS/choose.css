@@ -1,0 +1,91 @@
+@keyframes pisca{
+    0% {border-color: red;}
+    50% {border-color: white;}
+    100% {border-color: red;}
+}
+
+body{
+    margin: 0;
+}
+#selecao{
+    margin-left: 200px;
+}
+#selecao img{
+    width: 150px;
+    height: 150px;
+    border: 6px solid black;
+}
+#selecao img:hover{
+    animation: pisca 0.7s infinite;
+    cursor: pointer;
+}
+.titulo1{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#selecionados img{
+    width: 150px;
+    height: 150px;
+    border: 6px solid black;
+}
+#selecionados{
+    position: relative;
+    float: left;
+    margin-left: 100px;
+}
+.group:after{
+    clear: both;
+}
+#selecionados p{
+    text-align: center;
+    font-size: 24px;
+}
+#atacantes{
+    margin-left: 700px;
+}
+#atacantes img{
+    width: 100px;
+    height: 80px;
+    border: 6px solid black;
+    margin-top: 5px;
+}
+#atacantes p{
+    text-align: center;
+    font-size: 24px;
+}
+#comecar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#comecar button{
+    border: 3px solid black;
+    border-radius: 50px;
+    padding: 20px 20px;
+    font-size: 50px;
+    cursor: pointer;
+    outline: none;
+}
+.simulacao{
+    align-items: center;
+    text-align: center;
+}
+
+.escolhido{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.escolhido img{
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.fota{
+    width: 100px;
+    height: 80px;
+}
